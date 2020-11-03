@@ -22,10 +22,15 @@ body {
   display: flex;
 }
 
+.nav-wrapper .right-side {
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+}
 .nav-wrapper > .left-side > div {
   margin-right: 20px;
   font-size: 0.9em;
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
 }
 
 .brand {
@@ -52,6 +57,13 @@ body {
   color: black;
 }
 
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black;
+}
 /* Portfolio styles */
 
 .portfolio-items-wrapper {
@@ -80,6 +92,8 @@ body {
   align-items: center;
   height: 100%;
   text-align: center;
+  font-family: "Lato", sans-serif;
+
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -103,4 +117,28 @@ body {
 .img-darken {
   transition: 1s;
   filter: brightness(10%);
+}
+
+/* About me section */
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+  font-family: "Lato", sans-serif;
+}
+
+.profile-content-wrapper p {
+  font-family: "Lato", sans-serif;
 }
